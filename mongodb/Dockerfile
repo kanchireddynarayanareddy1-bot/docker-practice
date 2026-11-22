@@ -1,2 +1,6 @@
+# FROM mongo:7.0
+# COPY *.js /mongod-entrypoint-initdb.d
+
 FROM mongo:7.0
-COPY *.js /mongod-entrypoint-initdb.d
+COPY *.js /docker-entrypoint-initdb.d
+
